@@ -1,0 +1,6 @@
+<script type="text/javascript">
+$('a[href$="pdf"]').click(function(event) { var link = $(this).attr('href');
+var base = new RegExp("^"+window.location.protocol + "//" + window.location.host);
+link = link.replace(base, "");
+Munchkin.munchkinFunction('visitWebPage', { url: link }); } );
+</script>
