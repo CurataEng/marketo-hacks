@@ -9,6 +9,4 @@ if(!array_key_exists('id', $_GET)) {
 setcookie($_GET['id'], "1", strtotime('+90 days'), "/");
 $host = get_host();
 
-header("Location: ".$host."/?id=".$_GET['id']); 
-
 ?>
