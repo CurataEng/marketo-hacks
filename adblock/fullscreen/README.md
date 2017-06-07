@@ -12,5 +12,8 @@ Warning: Only use this on pages that have a Marketo munchkin. Placing this code 
 
 Here is an example script tag to include on your site: `<script src="fullscreen-adblock.js"></script>`
 
+## How it works
+The code works by checking to see if a variable that is normally instantiated by the Marketo Munckin exists.  If not, then the adblock warning is displayed.  The code checks after 1000 milliseconds after the document is loaded to minimize false alerts by allowing the Marketo tracker to fully load.
+
 ## Sample
 An example implementation is available [here](sample.html).
